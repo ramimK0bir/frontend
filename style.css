@@ -1,0 +1,370 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    background-color: #f5f5f5;
+}
+.container{
+    width: 80vw;
+    margin: 0px 13vw;
+    background-color: #fff;
+}
+.header{         
+    margin: 0 2vw;
+    height: 7vh;
+    justify-content: space-between;
+    width: 76vw;
+}
+
+.header .box{
+    width: max-content;
+    margin: 0 2vw;
+}
+.header .box h1{font-family: sans-serif;
+font-size: 3vw;}
+
+.header .box img{
+    width: 3vw;
+}
+.header .box button{
+    outline: none;
+    border: none;
+    height: max-content;
+    margin: 0 0.5vw;
+    padding: 0.5vh 0.4vw;
+    font-size: 2vw;
+    border-radius: 7px;
+}
+.header .box.ist button{
+    background-color: #fff;
+}
+.image-box{
+    position: relative;
+    width: 80vw;
+    overflow: hidden;
+    height: 40vh;
+
+}
+
+.image-box img{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    filter: blur(2px);
+}
+.image-box .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.image-box .overlay .card{
+    pointer-events: none;
+    height: 20vh;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px black;
+    background-color: #fff;
+    width: 55vw;
+}
+.image-box .overlay .card h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4vw;
+}
+.image-box .overlay .card div{
+    width: 100%;
+    height: 25%;
+    justify-content: space-evenly;
+
+}
+
+.image-box .overlay .card .cardi{
+    justify-content: space-evenly;
+    
+}
+.image-box .overlay .card button{
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 0.4vh;
+    outline: none;
+    border: none;
+    font-size: 1.5vw;
+    width: 8vw;
+}
+.image-box .overlay .card button.r{
+    background-color: #0ef4ce ;
+    border-radius: 20px;
+    width: 13vw;
+
+}
+.image-box .overlay .card button.l{
+    width: 30vw;
+}
+
+.image-box .overlay .card::after{
+    content: "Why Zappr ?";
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    pointer-events: auto;
+    width: 17vw;
+    display: flex;
+    align-items: center;
+    margin: 3vh 3vw;
+    color: #fff;
+    font-size: 2.5vw;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 3vw;
+    border: 2px solid #fff;
+    transition: 2s;
+}
+.image-box .overlay .card:hover::after{
+
+    color: black;
+    background-color: #fff;
+    border-color: black;
+}
+.icon-box h1{
+    font-size: 2vw;
+}
+.icon-box{
+    height: 20vh;
+    background-color: #fce24f;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.603);
+
+}
+.icon-box .icons{
+    margin: 2vh 0;
+    width: 50vw;
+    justify-content: space-between;
+}
+.icon-box .icons img{
+    height: 6vh;
+    width: 5vw;;
+}
+
+
+
+.feat-box{
+    height: 40vh;
+    box-shadow: 0 1px 3px black;
+ 
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.feat-box .boxes{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.feat-box .boxes .box{
+    position: relative;
+    top: -3vh;
+    width: 20vw;
+    height: 25vh;
+    background-color: #ffffff;
+}
+.feat-box h3{
+    font-size: 3vw;
+    position: relative;
+    right: 15vw;
+    bottom: 6vh;
+}
+
+
+
+
+
+.feat-box .boxes .box.btn::after{
+    content: "See full features ?";
+    position: absolute;
+    bottom: -11vh;
+    height: 5vh;
+    pointer-events: all;
+    font-weight: 700;
+    pointer-events: auto;
+    width: 17vw;
+    display: flex;
+    align-items: center;
+    margin: 4.7vh 0;
+    color: #000000;
+    font-size: 2vw;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 3vw;
+    border: 2px solid #000000;
+    transition: 2s;
+}
+.feat-box .boxes .box.btn{
+    pointer-events: none;
+}
+.feat-box .boxes .box.btn:hover::after{
+
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: rgb(0, 60, 255);
+} 
+
+.feat-box .boxes .box h4{
+    font-size: 2.2vw ;
+}
+.feat-box .boxes .box p{
+    font-size: 2.2vw ;
+    overflow-y: auto;
+}
+
+.feat-box .boxes .box img{
+    height: 30%;
+    width: 50%;
+}
+
+
+
+.container .buy-sell-box {
+    background-color:  #f8f8f8;
+    height: 35vh;
+    overflow: auto;
+
+    width: 100%;
+
+}
+
+.container .buy-sell-box :is(.buy-box,.sell-box){
+    width: 50%;
+    background-color: #f8f8f8;
+}
+
+.container .buy-sell-box  .buy-box h1 , .sell-box h1{
+    margin-left: 4vw;
+    margin-top:2vh;
+    height: auto;
+    font-size:clamp(2vw, 3vw, 4vw)    ;
+}
+.container .buy-sell-box :is(.buy-box,.sell-box) .card{
+    height: 70%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.container .buy-sell-box :is(.buy-box,.sell-box) .card .record{
+    background-color: transparent;
+    border-radius: 5vw;
+    background-color: #fff;
+    height: 3vh;
+    width: 95%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(54, 54, 54);
+}
+.container .buy-sell-box :is(.buy-box,.sell-box) .card .record::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 2.6vh;
+    width: 2.6vh;
+    margin-left: 1.5vw;
+    background-image:conic-gradient(red,green,blue);
+    border-radius:50% ;
+    margin-top: 0.2vh;
+    display: flex;
+    justify-items: center;
+
+}
+.container .buy-sell-box :is(.buy-box,.sell-box) .card button {
+    width: 35%;
+    height: 12%;
+    border: none;
+    background-color: black;
+    color: #e6e5e5;
+    border-radius: 2vw;
+    font-size: 1.3vw;
+    transition: 2s;
+}
+.container .buy-sell-box :is(.buy-box,.sell-box) .card  button:hover{
+    color: black;
+    background-color: #e6e5e5;
+}
+.container .buy-sell-box :is(.buy-box,.sell-box) .card .record p{
+    font-size: 2vw;
+}
+.container .buy-sell-box :is(.buy-box,.sell-box) .card .record p.r{
+    margin-left: 5vh;
+}
+.container .signup-req{
+    height: 30vh;
+    background-color: #a695cc;
+}
+.container .signup-req p{
+    font-size: 4.7vw;
+    text-align: center ;
+}
+.container .signup-req button{
+    background-color: black;
+    height: 4vh;
+    width: 16vw;
+    color: white;
+    font-size: 2.5vw;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5vh 2vw;
+    background-color: #000;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.footer-column h3 {
+    font-size: 2vw;
+    color: #ffffff;
+    margin-bottom: 1vh;
+}
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+}
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+
+.container .br {
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+.container .end .br{
+    background-color: #7a7a7a;
+}
+.container .end p{
+    background-color: black;
+    color: white;
+    font-size: 1vw;
+    padding: 1.5vh;
+}

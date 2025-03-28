@@ -1,0 +1,56 @@
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.black{
+    color: black;
+}
+.bg-gray{
+    background-color: #ebebeb;
+}
+.bg-black{
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+}
+.bg-red{
+    background-color: rgb(255, 0, 0);
+}
+.bg-pink{
+    background-color:pink;
+}
+.visible{
+    height: 100px;
+    width: 100px;
+}
+
+.full-div{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.col{
+    flex-direction: column;
+}
+
+.invert  {
+    filter: invert(1);
+}
+.bg-deep{
+    background-color: #fff6f6;
+}
